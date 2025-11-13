@@ -57,7 +57,7 @@ nav li {
   --bg: #ffffff;
   --text: #222;
   --accent: #0077cc;
-  --card-bg: #f8f8f8;
+  --card-bg: #741e1e;
 }
 
 :root[data-theme='dark'] {
