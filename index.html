@@ -21,14 +21,16 @@
             document.documentElement.setAttribute('data-theme', 'light');
         }
     </script>
-
 </head>
-
 <body>
-    
-  <!-- ===== Header ===== -->
   <header>
+    <div class="header-content">
     <h1>TechCon 2025 Event Schedule</h1>
+    <button id="theme-toggle" aria-label="Toggle dark and light mode">
+                <span class="sun-icon">☀</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
     <nav>
       <ul>
         <li><a href="#event-container">Events</a></li>
@@ -37,11 +39,19 @@
       </ul>
     </nav>
   </header>
-
-  <!-- ===== Main Content ===== -->
   <main>
     <section id="event-container">
-      <!-- Event cards will be generated dynamically here -->
+      <div class="search-and-filter-bar">
+                <input type="text" id="event-search" placeholder="Search events by title or description..." aria-label="Search events">
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" tabindex="0" role="button">All Events</button>
+                    <button class="filter-btn" data-filter="Keynote" tabindex="0" role="button">Keynotes</button>
+                    <button class="filter-btn" data-filter="Talk" tabindex="0" role="button">Talks</button>
+                    <button class="filter-btn" data-filter="Workshop" tabindex="0" role="button">Workshops</button>
+                    <button class="filter-btn" data-filter="Panel" tabindex="0" role="button">Panels</button>
+                    <button class="filter-btn" data-filter="Social" tabindex="0" role="button">Social</button>
+                </div>
     </section>
 
     <section id="speakers">
@@ -54,8 +64,6 @@
       <p>TechCon 2025 brings together visionaries, developers, and entrepreneurs to explore cutting-edge technologies shaping our future.</p>
     </section>
   </main>
-
-  <!-- ===== Footer ===== -->
   <footer>
     <p>&copy; 2025 TechCon Conference. All Rights Reserved.</p>
   </footer>
