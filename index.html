@@ -4,21 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechCon 2025 Event Schedule</title>
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Check localStorage for user preference, fall back to system preference
+        const storedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (storedTheme === 'dark' |
+
+| (!storedTheme && systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
 </head>
 
 <body>
     <style>/* ===== Global Reset ===== */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 020px;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: #0b549d;
+  color: #a21111;
   line-height: 1.6;
 }
 
