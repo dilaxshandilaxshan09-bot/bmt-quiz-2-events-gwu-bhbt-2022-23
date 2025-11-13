@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechCon 2025 Event Schedule</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>/* ====== General Styles ====== */
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <style>/* ===== Global Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,18 +16,18 @@
 }
 
 body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f9fafc;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f4f6f8;
   color: #333;
   line-height: 1.6;
 }
 
-/* ====== Header ====== */
+/* ===== Header ===== */
 header {
   background-color: #004080;
   color: #fff;
-  padding: 1.5rem 1rem;
   text-align: center;
+  padding: 1.5rem 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,14 +54,14 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* ====== Main Layout ====== */
+/* ===== Main Layout ===== */
 main {
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ====== Event Card Container ====== */
+/* ===== Event Container ===== */
 #event-container {
   display: grid;
   gap: 1.5rem;
@@ -77,11 +80,11 @@ main {
   }
 }
 
-/* ====== Event Card Styling ====== */
+/* ===== Event Card ===== */
 .event-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -91,10 +94,18 @@ main {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.event-card h3 {
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.event-card h2 {
   color: #004080;
-  margin-bottom: 0.5rem;
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .event-card p {
@@ -105,69 +116,53 @@ main {
 
 .event-card .time {
   font-weight: 600;
-  color: #222;
+  color: #111;
 }
 
-/* ====== Other Sections ====== */
-section {
-  margin-top: 3rem;
-}
-
-section h2 {
-  color: #004080;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* ====== Footer ====== */
+/* ===== Footer ===== */
 footer {
   background-color: #002b55;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
   margin-top: 3rem;
+  font-size: 0.9rem;
 }
 </style>
-</head>
-<body>
-  <!-- Header Section -->
+  <!-- ===== Header ===== -->
   <header>
     <h1>TechCon 2025 Event Schedule</h1>
     <nav>
       <ul>
-        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#event-container">Events</a></li>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- ===== Main Content ===== -->
   <main>
-    <!-- Event Container (Dynamic Content Area) -->
     <section id="event-container">
-      <!-- JavaScript will dynamically insert event cards here -->
+      <!-- Event cards will be generated dynamically here -->
     </section>
 
-    <!-- Additional SPA Sections -->
     <section id="speakers">
       <h2>Featured Speakers</h2>
-      <p>Meet the industry experts sharing insights on the latest tech trends.</p>
+      <p>Meet top innovators sharing insights on the latest in technology.</p>
     </section>
 
     <section id="about">
       <h2>About TechCon 2025</h2>
-      <p>TechCon 2025 brings together innovators, developers, and entrepreneurs to explore the future of technology and innovation.</p>
+      <p>TechCon 2025 brings together visionaries, developers, and entrepreneurs to explore cutting-edge technologies shaping our future.</p>
     </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- ===== Footer ===== -->
   <footer>
     <p>&copy; 2025 TechCon Conference. All Rights Reserved.</p>
   </footer>
 
-  <!-- JavaScript for SPA Logic -->
-  <script src="script.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
