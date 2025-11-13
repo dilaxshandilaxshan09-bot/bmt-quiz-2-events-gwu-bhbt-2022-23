@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        // Check localStorage for user preference, fall back to system preference
+      
         const storedTheme = localStorage.getItem('theme');
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         
@@ -45,12 +45,12 @@
                 <input type="text" id="event-search" placeholder="Search events by title or description..." aria-label="Search events">
 
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all" tabindex="0" role="button">All Events</button>
-                    <button class="filter-btn" data-filter="Keynote" tabindex="0" role="button">Keynotes</button>
-                    <button class="filter-btn" data-filter="Talk" tabindex="0" role="button">Talks</button>
-                    <button class="filter-btn" data-filter="Workshop" tabindex="0" role="button">Workshops</button>
-                    <button class="filter-btn" data-filter="Panel" tabindex="0" role="button">Panels</button>
-                    <button class="filter-btn" data-filter="Social" tabindex="0" role="button">Social</button>
+                    <dv></dv><button class="filter-btn active" data-filter="all" tabindex="0" role="button">All Events</button></div>
+                    <dv></dv><button class="filter-btn" data-filter="Keynote" tabindex="0" role="button">Keynotes</button></div>
+                    <dv></dv><button class="filter-btn" data-filter="Talk" tabindex="0" role="button">Talks</button></div>
+                    <dv></dv><button class="filter-btn" data-filter="Workshop" tabindex="0" role="button">Workshops</button></div>
+                    <dv></dv><button class="filter-btn" data-filter="Panel" tabindex="0" role="button">Panels</button></div>
+                    <dv></dv><button class="filter-btn" data-filter="Social" tabindex="0" role="button">Social</button></div>
                 </div>
     </section>
 
